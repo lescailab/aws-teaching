@@ -54,10 +54,12 @@ sudo apt-get install -y r-base \
     libcurl4-openssl-dev \
     libxml2-dev \
     texlive-* \
-    pandoc
+    pandoc \
+    mcrypt
 
 sudo groupadd rstudio-users
-sudo useradd -m -p 'argon2:$argon2id$v=19$m=10240,t=10,p=8$D8x/X0XCdzLb4fIBc4ZjmQ$Wl2oztW2Xzjo2218APCV1g' -s /bin/bash –G rstudio-users rstudiouser
+sudo useradd -m -p pa74OA2TNXvGA -s /bin/bash rstudiouser
+sudo usermod -a -G rstudio-users rstudiouser
 
 wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-1.4.1106-amd64.deb
 sudo gdebi -n rstudio-server-1.4.1106-amd64.deb
