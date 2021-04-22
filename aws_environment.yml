@@ -12,13 +12,7 @@ dependencies:
   - bioconda::multiqc
   - bioconda::lofreq
   - bioconda::bwa
-  - conda-forge::pandoc
-  - r::r=3.6.0
-  - r::r-tidyverse
-  - r::r-pander
-  - r::r-rmarkdown
-  - r::r-knitr
   - bioconda::t_coffee
   - bioconda::snpeff=4.5covid19
   - bioconda::clustalo
-  - conda-forge::jupyterlab
+  - conda-forge::nodejs
